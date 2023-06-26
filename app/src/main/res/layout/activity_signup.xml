@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainbackground"
+    tools:context=".SignUp">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:helperText="Requried"
+        app:helperTextTextColor="#FF0000"
+        android:layout_margin="15dp"
+        android:background="@drawable/greybackground">
+<!--        Upper syntax
+            from startIconDrawable
+            is used for logo in front of name / password -->
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        app:startIconDrawable="@drawable/baseline_email_24"
+        app:helperText="Requried"
+        app:helperTextTextColor="#FF0000"
+        android:layout_margin="15dp"
+        android:background="@drawable/greybackground"
+        >
+        <!--        Upper syntax
+                    from startIconDrawable
+                    is used for logo in front of name / password -->
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email Id" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:startIconDrawable="@drawable/baseline_password_24"
+        app:helperText="Requried"
+        app:helperTextTextColor="#FF0000"
+        android:layout_margin="15dp"
+        app:endIconMode="password_toggle"
+        android:background="@drawable/greybackground"
+        >
+        <!--        Upper syntax
+                    from startIconDrawable
+                    is used for logo in front of name / password -->
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:hint="Pasword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sign Up"
+        android:clickable="true"
+        android:background="@drawable/greybackground"
+
+        />
+</LinearLayout>
